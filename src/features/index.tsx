@@ -28,5 +28,5 @@ export const { setClasses, setMessage, setIsLoggedIn, setUser } = slice.actions;
 
 export const appReducer = slice.reducer;
 
-export { Data } from "./Data";
+export { Data } from "./displayData";
 export { Form, formReducer } from "./Form";

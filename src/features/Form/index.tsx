@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import { Direction } from "react-toastify/dist/utils";
 
 import { setValue } from "./slice";
 
@@ -16,7 +17,7 @@ export const Form: React.FC<{ login(user: string, cb: () => void): void }> = ({ 
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex h-screen w-screen flex-col content-start items-center justify-center gap-4"
+      className="flex h-screen w-screen flex-col content-start items-center justify-center gap-4" style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginTop: "100px"}}
     >
       <h1 className="text-xl font-bold tracking-wider text-gray-800">miniExtensions</h1>
       <div className="w-[218px] space-y-6">
